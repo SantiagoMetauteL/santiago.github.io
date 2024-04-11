@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box  ;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root
+{
+    --main-color: #000000;
+    --bg-color: #ffffff;
+    --text-color: #0f0c27;
+    --hover: hsl(0, 0%, 100%);
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+section
+{
+padding: 50px 10%;
+}
+body.active
+{
+    --text-color:#fff;
+    --bg-color:#0f0c27;
+}
+body
+{
+background: var(--bg-color);
+color: var(--text-color);     
+}
+.heading
+{
+text-align: center;
+}
+.heading h2
+{
+    font-size: 40px;
+    text-align: center;
+}
+.heading h3
+{
+    font-size: 25px;
+}
+.heading span
+{
+    font-size: var(--p-font);
+    color: rgb(2,166,70);
+}
+header
+{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 13px 10%;
+    box-shadow: 1px 1px 10px #00000071;
+}
+.logo
+{
+    font-size: 1.61rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+
+}
+.logo span
+{
+    font-size: 1.67rem;
+    font-weight: 600;
+    color: orangered;
+   
+}
+.menu-horizontal
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none ;
+}
+.menu-horizontal > li :hover{
+   text-decoration: underline;
+}
+.menu-vertical
+{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background: red;
+
+}
+.menu-horizontal > li:hover .menu-vertical
+{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: rgb(0, 0, 0);
+}
+.menu-vertical li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.inicio
+{
+    position: right;
+    width: 105%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+
+}
+.inicio h2
+{
+    margin-right: 22rem;
+}
+.inicio span
+{
+    color: rgb(255, 0, 0);
+}
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.inicio-img
+{
+    order: 3;
+}
+.inicio-img img
+{
+    width: 100%;
+}
+.inicio-text span
+{
+    box-shadow: 0 2px 7px #00000077;
+    color: #000000;
+    margin-left: 30px;
+    padding: 15px;
+    border-radius: 10%;
+} 
+.inicio-text h1
+{
+    font-size: var(--big-font);
+}
+.inicio-text h2
+{
+    font-size: 1.1rem;
+    font-weight: 400;
+
+}
+
